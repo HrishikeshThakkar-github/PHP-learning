@@ -8,10 +8,8 @@
 </head>
 
 <body>
-
-
-    <h2>PHP Form Validation Example</h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <h2>PHP Form Validation Example get data in other page</h2>
+    <form method="POST" action="output/form-validation-output.php">
         Name: <input type="text" name="name">
         <br><br>
         E-mail: <input type="text" name="email">
@@ -28,28 +26,6 @@
         <input type="submit" name="submit" value="Submit">
     </form>
 
-
-    <?php
-        // define variables and set to empty values
-        $name = $email = $gender = $comment = $website = "";
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $name = $_POST["name"];
-            $email = $_POST["email"];
-            $website = $_POST["website"];
-            $comment = $_POST["comment"];
-            $gender = $_POST["gender"];
-        }
-        echo "<h2>Your Input:</h2>";
-        echo $name;
-        echo "<br>";
-        echo $email;
-        echo "<br>";
-        echo $website;
-        echo "<br>";
-        echo $comment;
-        echo "<br>";
-        echo $gender;
-    ?>
 </body>
 
 </html>
