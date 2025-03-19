@@ -25,13 +25,13 @@ class user
         return $this->transactions;
     }
 
-    public function Largest_transaction():transaction  {
+    // public function Largest_transaction():transaction  {
 
-        $largest_transaction=
-        if($transaction['amount']>$largest_t[$user_t]['amount'] ){
-            $largest_t[$user_t] = $transaction;
-        }
-    }
+    //     $largest_transaction=
+    //     if($transaction['amount']>$largest_t[$user_t]['amount'] ){
+    //         $largest_t[$user_t] = $transaction;
+    //     }
+    // }
 }
 
 

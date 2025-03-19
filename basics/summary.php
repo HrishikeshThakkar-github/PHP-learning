@@ -28,6 +28,6 @@ foreach ($transactions as $transaction) {
 
 foreach ($users as $user) {
     var_dump($user->get_transactions());
-    var_dump($user->largest_transactions());
+  
 }
 
