@@ -24,10 +24,10 @@
       "tag": "//",
       "color": "#474747",
       "strikethrough": true,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
+      "underline": true,
+      "backgroundColor": "pink",
+      "bold": true,
+      "italic": true
     },
     {
       "tag": "todo",

@@ -55,3 +55,5 @@ class ChildClass extends ParentClass {
 
 $child = new ChildClass();
 echo $child->getRole(); // Output: Admin
+
+
