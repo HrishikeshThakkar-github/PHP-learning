@@ -1,0 +1,32 @@
+Exercise: Bank System (No DB)
+🏆 Goal:
+Simulate a bank system with multiple account types, using:
+Inheritance: Different types of accounts inherit from a BankAccount class.
+Traits: Add reusable behaviors (e.g., logging).
+Static properties: Track total accounts and transactions across all instances.
+
+📐 Requirements:
+
+✅ 1. BankAccount (Abstract Class):
+Properties: accountNumber, balance.
+Methods:
+deposit(float $amount)
+withdraw(float $amount) (behavior changes in child classes)
+getBalance()
+Static Property: $totalAccounts to track total accounts.
+
+✅ 2. SavingsAccount and CheckingAccount (Inheritance):
+SavingsAccount: No overdraft allowed.
+CheckingAccount: Allows overdraft up to a limit.
+
+✅ 3. Logger (Trait):
+log() method to track actions.
+
+✅ 4. Bank (Static Methods):
+Static Property: $totalTransactions to track total transactions.
+Static Methods:
+getTotalAccounts()
+getTotalTransactions()
+
+✅ 5. Test the System:
+Create accounts, perform deposits/withdrawals, log actions, and display total accounts and transactions.
