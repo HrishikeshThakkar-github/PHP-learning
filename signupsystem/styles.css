@@ -1,0 +1,130 @@
+body {
+    background-image: url("/assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    opacity: 1;
+    box-shadow: 20px 20px 200px 5px whitesmoke;
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+}
+.signup-container {
+    opacity: 1;
+    box-shadow: 20px 20px 200px 5px whitesmoke;
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
+    width: 80%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+}
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #CF9FFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+button:hover {
+    background-color: #DA70D6;
+}
+a {
+    display: block;
+    margin-top: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+a:hover {
+    text-decoration: underline;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.Terms {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #CF9FFF;
+}
+.Terms:checked{
+    color: #DA70D6;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.profile{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.profileouter{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.profile {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid black;
+    position: relative; /* Needed for tooltip positioning */
+}
+ 
+.tooltip {
+    position: absolute;
+    bottom: -30px; /* Position below the circle */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+ 
+.profile:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
