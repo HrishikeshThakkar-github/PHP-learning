@@ -9,6 +9,7 @@ $password = "Simform@123";
 try{
     $pdo=new PDO($dsn,$username,$password);
     $pdo->setAttribute(pdo::ATTR_ERRMODE,pdo::ERRMODE_EXCEPTION);
-    echo "connected";
+    //echo "connected";
 }catch(PDOException $e){echo $e->getMessage();}
+
 ?> 
