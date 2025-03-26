@@ -4,7 +4,7 @@
 require_once  'includes/config_session.inc.php';
 require_once 'includes/views/signup_view.inc.php';
 
-// echo "h";
+
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +24,10 @@ require_once 'includes/views/signup_view.inc.php';
         <h2>Sign up</h2>
 
         <form action="includes/signup.inc.php" method="POST">
-            <input type="text" placeholder="Username" name="username">
 
-            <input type="text" placeholder="Email" name="email">
-
-            <input type="password" placeholder="Password" name="password">
+            <?php
+                signup_data();
+            ?>
             <br><br>
             <button type="submit" name="signupbtn">Sign Up</button>
         </form>
