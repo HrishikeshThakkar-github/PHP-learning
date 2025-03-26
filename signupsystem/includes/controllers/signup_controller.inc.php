@@ -32,3 +32,9 @@ function is_email_registerd( $pdo, $email){
         return false;
     }
 }
+
+
+function create_user($pdo, $username, $email, $password){
+    set_user($pdo, $username, $email, $password);
+
+}
