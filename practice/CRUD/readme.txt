@@ -1,0 +1,1 @@
+start the php server from crud only and then in the browser navigate to /signupsystem/signup.php

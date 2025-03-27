@@ -1,7 +1,7 @@
 
 <?php
 
-$dsn = "mysql:host=localhost;dbname=signup_sys;charset=utf8mb4";
+$dsn = "mysql:host=localhost;dbname=crud;charset=utf8mb4";
 $db_user = "root";  
 $db_pass = "Simform@123";  
 

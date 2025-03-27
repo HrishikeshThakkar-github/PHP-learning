@@ -47,9 +47,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION["user_id"]=$result["id"];
         $_SESSION["user_username"]=$result["username"];
         $_SESSION["last_regeneration"]=time();
-        header("Location: ../../index.php");
-        $pdo=null;
-        die();
+
+
+        if (isAdmin($result['role'])) {
+            header("Location: ../../index.php");
+            $pdo = null;
+            $stmt = null;
+            die();
+        } else {
+            header("Location: ../../homepage.php");
+            $pdo = null;
+            $stmt = null;
+            die();
+        }
 
     } catch (PDOException $e) {
         echo $e->getMessage();

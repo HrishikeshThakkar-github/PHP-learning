@@ -16,3 +16,215 @@ h6{
     text-align: center;
     color: red;
 }
+
+
+
+/*--------------------------Flipkart homepage-----------------------*/
+
+
+
+/*-----navbar---*/
+
+body{
+    background-color: #F1F3F6;
+}
+
+.container-fluid,
+.container{
+    background-color: white;
+}
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+}
+.input-group{
+    width: 50%;
+}
+
+.input-group .input-group-text{
+    background-color: #f0f5ff;
+
+}
+
+.input-group .form-control{
+    background-color: #f0f5ff;
+}
+
+.listfor3dot{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 10;
+}
+
+.listfor3dot li{
+    padding: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.listfor3dot li:hover{
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-group .btn1:hover{
+    border: 2px solid #F1F3F6;
+}
+
+.btn-group:hover .listfor3dot{
+    display: block;
+}
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+.dropdown-men{
+    display: none;
+}
+
+.btn-group{
+    position: relative;
+    display: inline-block;
+}
+
+.btn-group .btn1{
+    padding: 10px 20px;
+    color: white;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/*-----navbar completed---*/
+
+
+#carouselExample{
+    width: 95%;
+}
+
+.cards-wrapper{
+    display: flex;
+}
+
+.card{
+    margin: 0.5rem;
+}
+
+
+
+
+
+
+
+.card-css{
+    margin-top: 70px;
+}
+
+
+.card img{
+    max-height: 200px;
+    max-width: 200px;
+}
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+}
+.dn{
+    display: block;
+}
+.instruments{
+    overflow-x: scroll;
+}
+
+.instruments-down{
+    overflow-x: hidden;
+}
+
+.instruments2{
+    overflow-x: scroll;
+    width: 80%;
+}
+
+.initial-items-list {
+    background-color: white;
+    width: 85vw;
+    display: grid;
+    grid-template-columns: 83% 17%;
+    gap: 10px;
+
+    
+}
+
+.cards-wrapper{
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.card{
+    margin: 0.5rem;
+    text-align: center;
+    border: 1px solid rgb(214, 214, 214) ;
+    padding: 1rem;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
+
+    overflow-y: hidden;
+    width: 18rem;
+    max-height: 350px;
+
+}
+
+.py-5{
+    background-color: black;
+    color: #F1F3F6;
+    
+    padding: 0rem 15rem;
+}
+
+
+@media (max-width:992px)
+{
+    .dn{
+        display: none;
+    }
+    .instruments2{
+        width: 100%;
+    }
+}
+
+@media (max-width:1000px)
+{
+    .instruments-down{
+        display: none;
+    }
+    .heading-2{
+        display: none;
+    }
+}

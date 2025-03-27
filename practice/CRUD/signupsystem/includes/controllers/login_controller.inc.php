@@ -29,3 +29,12 @@ function is_password_wrong( $password , $hashed ){
     }
  
 }
+
+function isAdmin(string $role)
+{
+    if ($role === "admin") {
+        return true;
+    } else {
+        return false;
+    }
+}
