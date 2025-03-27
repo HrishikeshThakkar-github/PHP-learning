@@ -24,6 +24,7 @@ require_once 'include/db.con.inc.php';
     <tbody>
 
         <?php
+        
         $query = "SELECT * FROM user";
         $stmt = $pdo->prepare($query);
         $stmt->execute(); // Ensure execution
@@ -50,6 +51,8 @@ if (isset($_GET['message'])) {
     echo "<h6>" . $_GET['message'] . "</h6>";
 }
 ?>
+
+
 <form action="include/add.inc.php" method="POST">
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -84,5 +87,8 @@ if (isset($_GET['message'])) {
         </div>
     </div>
 </form>
+
+
+
 
 <?php require_once 'footer.php'; ?>
