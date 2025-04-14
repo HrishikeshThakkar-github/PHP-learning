@@ -56,4 +56,10 @@ $myArr = array("Volvo", 15, "myFunction"); //we can also use myfunction() instea
 $myArr[2]();
 
 
+
+
+
+
+
+
 ?>

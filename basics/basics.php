@@ -17,3 +17,18 @@ $is_logged_in=true;
 <?php echo "Some text"; ?>
 No newline
 <?= "But newline now" ?>
+
+<?= `ls`;?>
+
+<?php
+$food = '';
+
+$return_value = match ($food) {
+    'apple' => 'This food is an apple',
+    'bar' => 'This food is a bar',
+    'cake' => 'This food is a cake',
+    ''=>'this'
+};
+
+var_dump($return_value);
+?>
